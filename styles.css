@@ -148,7 +148,7 @@ h2 {
 
 .button.primary {
   background: var(--primary);
-  color: white;
+  color: var(--bg);
 }
 
 .button.primary:hover {
@@ -231,6 +231,61 @@ h2 {
 
 .narrow {
   max-width: 700px;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 5px;
+}
+
+#projects {
+  scroll-margin-top: 90px;
+}
+
+.section-intro {
+  max-width: 680px;
+  color: var(--muted);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-status {
+  margin-bottom: 1.2rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--primary);
+  font-size: 0.8rem;
+}
+
+.project-card .project-tech {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.project-link {
+  color: var(--primary);
+  margin-top: 0.5rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.support-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .button { transition: none; }
 }
 
 .site-footer {
